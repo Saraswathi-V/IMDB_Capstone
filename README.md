@@ -60,47 +60,7 @@ This project ingests large IMDb datasets into **MongoDB**, processes the data us
 git clone https://github.com/yourusername/imdb-bigdata-dashboard.git
 cd imdb-bigdata-dashboard
 
-## 2. **Create a virtual environment**
+### Create a virtual environment
 
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
-
-
-3. **Install dependencies**
-
-pip install -r requirements.txt
-
-
-**Start MongoDB**
-Ensure MongoDB is running on mongodb://localhost:27017 or update the connection string in config.py.
-
-4. **Usage**
-
-Load data into MongoDB
-
-python src/load_data.py
-
-
-Run the Streamlit dashboard
-
-streamlit run src/dashboard.py
-
-
-Open your browser at http://localhost:8501
-**
-Power BI / Tableau Integration**
-
-Connect directly to the MongoDB database using the respective connectors.
-
-Use aggregated collections for faster performance.
-
-Build visualizations such as bar charts, line charts, and maps for trends and analysis.
-
-**Contributing**
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-**License**
-
-This project is licensed under the MIT License.
-
