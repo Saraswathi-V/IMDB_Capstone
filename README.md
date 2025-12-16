@@ -60,7 +60,7 @@ This project ingests large IMDb datasets into **MongoDB**, processes the data us
 git clone https://github.com/yourusername/imdb-bigdata-dashboard.git
 cd imdb-bigdata-dashboard
 
-2. **Create a virtual environment**
+## 2. **Create a virtual environment**
 
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
@@ -103,3 +103,4 @@ Contributions are welcome! Please open an issue or submit a pull request.
 **License**
 
 This project is licensed under the MIT License.
+
