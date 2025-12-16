@@ -46,7 +46,21 @@ This project ingests large IMDb datasets into **MongoDB**, processes the data us
 
 ## Architecture
 
-[IMDb TSV/GZ Files] --> [MongoDB] --> [Python ETL Scripts] --> [Streamlit Dashboard]
+flowchart LR
+    A[IMDb TSV Files] --> B[Ingestion Layer]
+    B --> C[(MongoDB Raw Collection)]
+    C --> D[Cleaning & Validation]
+    D --> E[(MongoDB Clean Collection)]
+    E --> F[Aggregation Layer]
+    F --> G[(MongoDB Gold Collections)]
+    G --> H[Streamlit Dashboard]
+
+    subgraph MongoDB Cluster
+        C
+        E
+        G
+    end
+
 
 --> [Power BI/Tableau Visualizations]
 
@@ -64,4 +78,5 @@ cd imdb-bigdata-dashboard
 
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
+
 
