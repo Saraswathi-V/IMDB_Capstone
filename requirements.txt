@@ -1,0 +1,9 @@
+$req = @'
+pandas
+streamlit
+pymongo
+pydantic
+loguru
+python-dotenv
+'@
+Set-Content -Path requirements.txt -Value $req -Encoding UTF8
