@@ -224,10 +224,13 @@ streamlit run streamlit_app.py
 
 ## 👤 Author
 
-**Saraswathi Vallaikal**/n
-**Mohana Thota**/n
+**Saraswathi Vallaikal**
+---
+**Mohana Thota**
+---
 Big Data Capstone Project
 
 
 ---
+
 
